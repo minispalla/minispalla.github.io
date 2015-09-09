@@ -4,7 +4,7 @@ title:  Tags
 permalink: /tags/
 ---
 
-<h3>Tag Cloud</h3>
+<h2>Tag Cloud</h2>
 {% assign tags = site.tags | sort %}
 {% for tag in tags %}
  <span class="site-tag">
@@ -15,7 +15,7 @@ permalink: /tags/
 </span>
 {% endfor %}
 
-<h3>Posts by Tag</h3>
+<h2>Posts by Tag</h2>
 <div class="tag-list">
 {% for tag in site.tags %}
   <div class="tag-group">
