@@ -7,6 +7,45 @@
     <atom:link href="http://codebyspalla.com/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>The easiest way to install Jekyll on Ubuntu 14.04</title>
+        <description>&lt;p&gt;I spent a while figuring out that if you install ruby 1.9 then you will have troubles down the road. So then I tryed to use rbenv to install ruby2.2 but that didn’t work out. So I ended up finding a PPA and installed it that way.&lt;/p&gt;
+
+&lt;h4 id=&quot;install-the-prerequisites&quot;&gt;Install the prerequisites&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;sudo apt-get install build-essentials gcc make git
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;add-the-brightbox-ppa-and-install-ruby-and-ruby-dev&quot;&gt;Add the Brightbox PPA and Install ruby and ruby-dev&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;sudo apt-add-repository ppa:brightbox/ruby-ng
+sudo apt-get update
+sudo apt-get install ruby2.2 ruby2.2-dev
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;install-nodejs&quot;&gt;Install nodejs&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;sudo apt-get install nodejs
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;install-jekyll-and-json&quot;&gt;Install Jekyll and JSON&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;sudo gem install jekyll
+sudo gem install json
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;optional-this-will-install-extras-but-is-not-required&quot;&gt;OPTIONAL (this will install extras but is not required)&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;sudo apt-get install zlib1g-dev
+sudo gem install github-pages
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;to-run-jekyll&quot;&gt;To Run Jekyll&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;jekyll serve --watch
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;--watch&lt;/code&gt; will regenerate the blog when you make changes&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 09 Sep 2015 16:29:57 -0500</pubDate>
+        <link>http://codebyspalla.com/jekyll/ubuntu/2015/09/09/Installing-Jekyll-on-Ubuntu14-04/</link>
+        <guid isPermaLink="true">http://codebyspalla.com/jekyll/ubuntu/2015/09/09/Installing-Jekyll-on-Ubuntu14-04/</guid>
+      </item>
+    
+      <item>
         <title>Announcing Version 2.0</title>
         <description>&lt;p&gt;In an effort to make Pixyll easier to customize and more aesthetically pleasing, we’ve release version &lt;code&gt;2.0&lt;/code&gt;.&lt;/p&gt;
 

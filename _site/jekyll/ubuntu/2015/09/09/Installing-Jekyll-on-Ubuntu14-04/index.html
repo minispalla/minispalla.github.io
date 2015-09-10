@@ -3,12 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Pixyll has Pagination &#8211; CodeBySpalla</title>
+    <title>The easiest way to install Jekyll on Ubuntu 14.04 &#8211; CodeBySpalla</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="This is an empty post to illustrate the pagination component with Pixyll.">
+    <meta name="description" content="The easiest way of installing Jekyll on Ubuntu 14.04 I have found.">
     <meta name="author" content="Aaron Spalla">
-    <meta name="keywords" content="jekyll, pixyll">
-    <link rel="canonical" href="http://codebyspalla.com/jekyll/pixyll/2014/06/08/pixyll-has-pagination/">
+    <meta name="keywords" content="jekyll, ubuntu">
+    <link rel="canonical" href="http://codebyspalla.com/jekyll/ubuntu/2015/09/09/Installing-Jekyll-on-Ubuntu14-04/">
     <link rel="alternate" type="application/rss+xml" title="RSS Feed for CodeBySpalla" href="/feed.xml" />
 
     <!-- Custom CSS -->
@@ -26,9 +26,9 @@
     <!-- From: https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Pixyll has Pagination">
+    <meta property="og:title" content="The easiest way to install Jekyll on Ubuntu 14.04">
     <meta property="og:description" content="A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff.">
-    <meta property="og:url" content="http://codebyspalla.com/jekyll/pixyll/2014/06/08/pixyll-has-pagination/">
+    <meta property="og:url" content="http://codebyspalla.com/jekyll/ubuntu/2015/09/09/Installing-Jekyll-on-Ubuntu14-04/">
     <meta property="og:site_name" content="CodeBySpalla">
 
     <!-- Twitter Card -->
@@ -36,9 +36,9 @@
     
         <meta name="twitter:site" content="@minispalla" />
     
-    <meta name="twitter:title" content="Pixyll has Pagination" />
-    <meta name="twitter:description" content="This is an empty post to illustrate the pagination component with Pixyll." />
-    <meta name="twitter:url" content="http://codebyspalla.com/jekyll/pixyll/2014/06/08/pixyll-has-pagination/" />
+    <meta name="twitter:title" content="The easiest way to install Jekyll on Ubuntu 14.04" />
+    <meta name="twitter:description" content="The easiest way of installing Jekyll on Ubuntu 14.04 I have found." />
+    <meta name="twitter:url" content="http://codebyspalla.com/jekyll/ubuntu/2015/09/09/Installing-Jekyll-on-Ubuntu14-04/" />
 
     <!-- Icons -->
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
@@ -87,8 +87,8 @@
 
 
 <div class="post-header mb2">
-  <h1>Pixyll has Pagination</h1>
-  <span class="post-meta">Jun 8, 2014</span><br>
+  <h1>The easiest way to install Jekyll on Ubuntu 14.04</h1>
+  <span class="post-meta">Sep 9, 2015</span><br>
   
   <span class="post-meta small">
   
@@ -98,12 +98,42 @@
 </div>
 
 <article class="post-content">
-  <p>This is an empty post to illustrate the pagination component with Pixyll.</p>
+  <p>I spent a while figuring out that if you install ruby 1.9 then you will have troubles down the road. So then I tryed to use rbenv to install ruby2.2 but that didn’t work out. So I ended up finding a PPA and installed it that way.</p>
+
+<h4 id="install-the-prerequisites">Install the prerequisites</h4>
+<pre><code>sudo apt-get install build-essentials gcc make git
+</code></pre>
+
+<h4 id="add-the-brightbox-ppa-and-install-ruby-and-ruby-dev">Add the Brightbox PPA and Install ruby and ruby-dev</h4>
+<pre><code>sudo apt-add-repository ppa:brightbox/ruby-ng
+sudo apt-get update
+sudo apt-get install ruby2.2 ruby2.2-dev
+</code></pre>
+
+<h4 id="install-nodejs">Install nodejs</h4>
+<pre><code>sudo apt-get install nodejs
+</code></pre>
+
+<h4 id="install-jekyll-and-json">Install Jekyll and JSON</h4>
+<pre><code>sudo gem install jekyll
+sudo gem install json
+</code></pre>
+
+<h4 id="optional-this-will-install-extras-but-is-not-required">OPTIONAL (this will install extras but is not required)</h4>
+<pre><code>sudo apt-get install zlib1g-dev
+sudo gem install github-pages
+</code></pre>
+
+<h4 id="to-run-jekyll">To Run Jekyll</h4>
+<pre><code>jekyll serve --watch
+</code></pre>
+<p><code>--watch</code> will regenerate the blog when you make changes</p>
+
 
 </article>
 
 Tags:
-<i class="icon-tags"></i>  <a href="/tags/sample-post" title="View posts tagged with &quot;sample-post&quot;"><u>sample-post</u></a>    <a href="/tags/readability" title="View posts tagged with &quot;readability&quot;"><u>readability</u></a>    <a href="/tags/test" title="View posts tagged with &quot;test&quot;"><u>test</u></a>  
+<i class="icon-tags"></i>  <a href="/tags/jekyll" title="View posts tagged with &quot;jekyll&quot;"><u>jekyll</u></a>    <a href="/tags/ubuntu" title="View posts tagged with &quot;ubuntu&quot;"><u>ubuntu</u></a>    <a href="/tags/install-setup" title="View posts tagged with &quot;install-setup&quot;"><u>install-setup</u></a>  
 
 
 
@@ -113,7 +143,7 @@ Tags:
   <div id="disqus_thread"></div>
   <script type="text/javascript">
     var disqus_shortname  = 'codebyspalla';
-    var disqus_identifier = '/jekyll/pixyll/2014/06/08/pixyll-has-pagination';
+    var disqus_identifier = '/jekyll/ubuntu/2015/09/09/Installing-Jekyll-on-Ubuntu14-04';
     var disqus_title      = '';
 
     (function() {

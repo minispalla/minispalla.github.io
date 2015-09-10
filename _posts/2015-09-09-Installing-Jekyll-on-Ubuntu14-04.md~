@@ -1,0 +1,46 @@
+---
+layout:     post
+title:      The easiest way to install Jekyll on Ubuntu 14.04
+date:       2015-09-09 21:29:57
+summary:    The easiest way of installing Jekyll on Ubuntu 14.04 I have found.
+categories: jekyll ubuntu
+tags:	    [jekyll,ubuntu,install-setup]
+---
+
+I spent a while figuring out that if you install ruby 1.9 then you will have troubles down the road. So then I tryed to use rbenv but that didn't work out. So I ended up finding a PPA and installed it that way. 
+
+#### Install the prerequisites
+~~~~~~~~~~~
+sudo apt-get install build-essentials gcc make git
+~~~~~~~~~~~
+
+#### Add the Brightbox PPA and Install ruby and ruby-dev
+~~~~~~~~~~~
+sudo apt-add-repository ppa:brightbox/ruby-ng
+sudo apt-get update
+sudo apt-get install ruby2.2 ruby2.2-dev
+~~~~~~~~~~~
+
+#### Install nodejs
+~~~~~~~~~~~
+sudo apt-get install nodejs
+~~~~~~~~~~~
+
+#### Install Jekyll and JSON
+~~~~~~~~~~~
+sudo gem install jekyll
+sudo gem install json
+~~~~~~~~~~~
+
+#### OPTIONAL (this will install extras but is not required)
+~~~~~~~~~~~
+sudo apt-get install zlib1g-dev
+sudo gem install github-pages
+~~~~~~~~~~~
+
+#### To Run Jekyll
+~~~~~~~~~~~
+jekyll serve --watch
+~~~~~~~~~~~
+```--watch``` will regenerate the blog when you make changes 
+
