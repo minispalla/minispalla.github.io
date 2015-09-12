@@ -1,14 +1,15 @@
 <footer class="center">
   <div class="measure">
     <small>
-	Connect Here! 
+	Contact me <a href="{{ site.baseurl }}/contact/">Here!</a>
+	<div class="clearfix"></div>
+	{% if site.show_social_icons %}
+ 		{% include social_links.html %}
+	{% endif %}
+	 </div>
     </small>
   </div>
 
-<div class="clearfix"></div>
-{% if site.show_social_icons %}
- {% include social_links.html %}
-{% endif %}
- </div>
+
 
 </footer>

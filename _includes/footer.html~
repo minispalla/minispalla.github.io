@@ -1,15 +1,15 @@
 <footer class="center">
   <div class="measure">
     <small>
-      Theme crafted with &lt;3 by <a href="http://johnotander.com">John Otander</a> (<a href="https://twitter.com/4lpine">@4lpine</a>).<br>
-      &lt;/&gt; available on <a href="https://github.com/johnotander/pixyll">Github</a>.
+	Contact me <a href="{{ site.baseurl }}/contact/">Here!</a> Or  {% include social_links.html %}
+	<div class="clearfix"></div>
+	{% if site.show_social_icons %}
+ 		{% include social_links.html %}
+	{% endif %}
+	 </div>
     </small>
   </div>
 
-<div class="clearfix"></div>
-{% if site.show_social_icons %}
- {% include social_links.html %}
-{% endif %}
- </div>
+
 
 </footer>
