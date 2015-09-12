@@ -3,11 +3,11 @@ layout:     post
 title:      The easiest way to install Jekyll on Ubuntu 14.04
 date:       2015-09-09 21:29:57
 summary:    The easiest way of installing Jekyll on Ubuntu 14.04 I have found.
-categories: jekyll ubuntu
-tags:	    [jekyll,ubuntu,install-setup]
+categories: [jekyll]
+tags:	    [jekyll,ubuntu,install&setup]
 ---
 
-I spent a while figuring out that if you install ruby 1.9 then you will have troubles down the road. So then I tryed to use rbenv but that didn't work out. So I ended up finding a PPA and installed it that way. 
+I spent a while figuring out that if you install ruby1.9 then you will have troubles down the road. So then I tryed to use rbenv to install ruby2.2 but that didn't work out. So I ended up finding a PPA and installed it that way. 
 
 #### Install the prerequisites
 ~~~~~~~~~~~

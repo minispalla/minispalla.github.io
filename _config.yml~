@@ -14,8 +14,8 @@ google_verification:
 # Optional features
 animated:           false
 show_related_posts: false
-show_post_footers:  false
-show_social_icons:  false
+show_post_footers:  true
+show_social_icons:  true
 
 # Disqus post comments
 # (leave blank to disable Disqus)
@@ -53,6 +53,6 @@ markdown:     kramdown
 redcarpet:
   extensions: ['smart', 'tables', 'with_toc_data']
 permalink:    pretty
-paginate:     4
+paginate:     5
 sass:
   compressed: true

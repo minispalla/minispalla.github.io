@@ -19,7 +19,7 @@ permalink: /tags/
 <div class="tag-list">
 {% for tag in site.tags %}
   <div class="tag-group">
-    {% capture tag_name %}{{ tag | first }}{% endcapture %}
+    {% capture tag_name %}{{ tag | replace:'-', ' ' | first }}{% endcapture %}
     <h4 class="tag-group-title" id="{{ tag_name | slugize }}">{{ tag_name }}</h4>
     {% for post in site.tags[tag_name] %}
     <article class="tag-item">
